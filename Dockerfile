@@ -48,3 +48,4 @@ COPY --from=dependencies node_modules ./node_modules
 CMD npm start
 
 EXPOSE 3000
+
