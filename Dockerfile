@@ -12,9 +12,10 @@
 #	docker run -d -p 3000:3000 --name alpine_timeoff timeoff
 #
 # 4. Login to running container (to update config (vi config/app.json): 
-#	docker exec -ti --user root alpine_timeoff /bin/sh
+#	docker exec -ti --user root alpine_timeoff /bin/sh 
 # --------------------------------------------------------------------
-#FROM alpine:latest as dependencies
+#FROM alpine:latest as dependencies 
+#To fix the issue need to add python:2.7-alpine
 FROM python:2.7-alpine as dependencies
 ENV PYTHONUNBUFFERED=1
 ENV SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
