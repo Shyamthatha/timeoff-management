@@ -21,7 +21,6 @@ ENV PYTHONUNBUFFERED=1
 ENV SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
 RUN apk add --no-cache build-base g++ make
 RUN apk add --no-cache gcc musl-dev make
-#RUN apk add --upgrade python3 python3-dev build-base
 RUN apk add --no-cache \
     nodejs npm
 
